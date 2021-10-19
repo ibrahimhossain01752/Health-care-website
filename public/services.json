@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Health Care",
+        "description": "Find Health Insurance Companies Usa. Unlimited Access. 100% Secure. Always Facts. Privacy Friendly. The Best Resources. Results & Answers.",
+        "img": "https://as2.ftcdn.net/v2/jpg/02/67/73/59/500_F_267735982_bVaJnLumRzMBp7uRwK41RkewLKMhosbG.jpg",
+        "doctor": "Taylor Swift",
+        "visit": 40,
+        "contact": "09999458549"
+    },
+    {
+        "id": 2,
+        "name": "Heart Care",
+        "description": "Find Health Insurance Companies Usa. Unlimited Access. 100% Secure. Always Facts. Privacy Friendly. The Best Resources. Results & Answers.",
+        "img": "https://as2.ftcdn.net/v2/jpg/03/61/06/35/500_F_361063512_9zEU0WLBocKzSdmxOwhoNGAL86vSA2KA.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Diabetics",
+        "description": "Find Health Insurance Companies Usa. Unlimited Access. 100% Secure. Always Facts. Privacy Friendly. The Best Resources. Results & Answers.",
+        "img": "https://as1.ftcdn.net/v2/jpg/02/98/19/98/500_F_298199886_V8lWftwGIf2RgbhSFHtI6gC55GJeYm2t.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Ear Care",
+        "description": "Find Health Insurance Companies Usa. Unlimited Access. 100% Secure. Always Facts. Privacy Friendly. The Best Resources. Results & Answers.",
+        "img": "https://as2.ftcdn.net/v2/jpg/02/48/11/57/500_F_248115703_jPd773CZIJ8sCBXRShfIU8IWS5Pc3b1d.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Nose Care",
+        "description": "Find Health Insurance Companies Usa. Unlimited Access. 100% Secure. Always Facts. Privacy Friendly. The Best Resources. Results & Answers.",
+        "img": "https://as2.ftcdn.net/v2/jpg/01/31/91/31/500_F_131913150_EPg8JEJR3CMEFz5MDYpO0QdPOhqFElxI.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Head Care",
+        "description": "Find Health Insurance Companies Usa. Unlimited Access. 100% Secure. Always Facts. Privacy Friendly. The Best Resources. Results & Answers.",
+        "img": "https://as1.ftcdn.net/v2/jpg/01/39/59/50/500_F_139595075_Uxn8ZIvsyeLDhDfgGlJoBIoptxi2XA1r.jpg"
+    }
+]
