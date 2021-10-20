@@ -5,7 +5,7 @@ import notfound from '../../images/notfound/5203299.jpg'
 
 const NotFound = () => {
     return (
-        <div className="w-25 justify-content-center">
+        <div className="w-25 justify-content-center mx-auto mb-3">
             <img src={notfound} class="img-fluid" alt="..."></img>
             <br />
             <Link to="/">

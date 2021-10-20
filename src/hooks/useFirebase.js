@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Pages/Login/Firebase/firebase.int";
 
@@ -6,25 +6,48 @@ initializeAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
     const [isLoading, setIsLoading] = useState(true);
 
+
     const auth = getAuth();
+    const googleProvider = new GoogleAuthProvider();
+
 
     const signInUsingGoogle = () => {
         setIsLoading(true);
 
-        const googleProvider = new GoogleAuthProvider();
-
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-            })
-
+        return signInWithPopup(auth, googleProvider)
             .finally(() => setIsLoading(false))
-
-
-
     }
+
+    const handleEmail = e => {
+        setEmail(e.target.value);
+    }
+    const handlePassword = e => {
+        setPassword(e.target.value);
+    }
+    const handleNameSet = e => {
+        setName(e.target.value);
+    }
+
+
+    const SignInWithEmail = (e) => {
+        e.preventDefault()
+        console.log(email, password);
+        signInWithEmailAndPassword(auth, email, password)
+            .then((result) => {
+                alert("Login success")
+            })
+            .catch((error) => {
+                alert("No user exist| ", error.code);
+                //console.log(error.code);
+            })
+        console.log('clicked')
+    }
+
 
     //observe use state changed
     useEffect(() => {
@@ -51,7 +74,18 @@ const useFirebase = () => {
         user,
         isLoading,
         signInUsingGoogle,
-        logOut
+        logOut,
+        SignInWithEmail,
+        setEmail,
+        setPassword,
+        handleEmail,
+        handlePassword,
+        auth,
+        email,
+        password,
+        name,
+        setName,
+        handleNameSet
     }
 }
 
