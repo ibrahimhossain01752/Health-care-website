@@ -10,6 +10,9 @@ import AuthProvider from './Contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import Footer from './Footer/Footer';
 import Register from './Register/Register';
+import Doctors from './Doctors/Doctors';
+import Aboutus from './Aboutus/Aboutus';
+import Aboutsus from './Aboutus/Aboutsus';
 
 
 function App() {
@@ -35,6 +38,12 @@ function App() {
             <PrivateRoute path="/booking/:id">
               <Booking></Booking>
             </PrivateRoute>
+            <Route path="/doctors">
+              <Doctors></Doctors>
+            </Route>
+            <Route path="/aboutus">
+              <Aboutsus></Aboutsus>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
